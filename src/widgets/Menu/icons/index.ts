@@ -1,4 +1,6 @@
 export { default as FarmIcon } from "./Farm";
+export { default as TombIcon } from "./Tomb";
+export { default as BoneIcon } from "./Bones";
 export { default as GroupsIcon } from "./Groups";
 export { default as HamburgerIcon } from "./Hamburger";
 export { default as HamburgerCloseIcon } from "./HamburgerClose";
