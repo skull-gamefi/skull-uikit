@@ -30,7 +30,7 @@ export const links = [
   },
   {
     label: "Bone",
-    icon: "BoneIcon",
+    icon: "RoadIcon",
     href: "/farms",
   },
   {
