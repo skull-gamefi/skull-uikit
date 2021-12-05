@@ -1,5 +1,6 @@
 export { default as FarmIcon } from "./Farm";
 export { default as TombIcon } from "./Tomb";
+export { default as RoadIcon } from "./Road";
 export { default as BoneIcon } from "./Bones";
 export { default as GroupsIcon } from "./Groups";
 export { default as HamburgerIcon } from "./Hamburger";
