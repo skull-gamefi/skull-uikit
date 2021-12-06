@@ -25,6 +25,7 @@ export { default as GooseIcon } from "./Goose";
 export { default as HandshakeIcon } from "./Handshake";
 export { default as LayerIcon } from "./Layer";
 export { default as RoadmapIcon } from "./Roadmap";
+export { default as FightIcon } from "./Fight";
 export { default as BondsIcon } from "./Bonds";
 export { default as VaultsIcon } from "./Vaults";
 export { default as EggHouseIcon } from "./EggHouse";

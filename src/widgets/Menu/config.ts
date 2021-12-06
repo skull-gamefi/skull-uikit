@@ -34,6 +34,11 @@ export const links = [
     href: "/farms",
   },
   {
+    label: "Fight",
+    icon: "FightIcon",
+    href: "/fight",
+  },
+  {
     label: "Pools",
     icon: "PoolIcon",
     href: "/syrup",
