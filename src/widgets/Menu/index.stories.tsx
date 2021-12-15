@@ -32,6 +32,7 @@ export const Connected: React.FC = () => {
         cakePriceUsd={0.23158668932877668}
         links={links}
         profile={null}
+        network="TEST123"
       >
         <div>
           <Heading as="h1" mb="8px">

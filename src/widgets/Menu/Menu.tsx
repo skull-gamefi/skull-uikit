@@ -39,6 +39,13 @@ const BodyWrapper = styled.div`
   display: flex;
 `;
 
+const Network = styled.div`
+  line-height: 32px;
+  color: ${({ theme }) => theme.colors.secondary};
+  margin: 0 10px;
+  font-weight: 800;
+`;
+
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   flex-grow: 1;
   margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
@@ -72,6 +79,7 @@ const Menu: React.FC<NavProps> = ({
   priceLink,
   profile,
   children,
+  network,
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -120,7 +128,9 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+
         <Flex>
+          <Network>{network}</Network>
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>
