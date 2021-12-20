@@ -21,13 +21,12 @@ const Container = styled.div`
   overflow-x: hidden;
   height: 100%;
 `;
-
+const RugDoc = styled.div``;
 const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   const location = useLocation();
 
   // Close the menu when a user clicks a link on mobile
   const handleClick = isMobile ? () => pushNav(false) : undefined;
-
   return (
     <Container>
       {links.map((entry) => {
@@ -64,6 +63,40 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           </MenuEntry>
         );
       })}
+
+      <MenuEntry key="rugdoc" style={{ height: 100 }}>
+        <RugDoc
+          style={{
+            backgroundImage: `url('https://skullgamefi.com/images/egg/rugdoc.png')`,
+            cursor: "pointer",
+            height: "100%",
+            width: "100%",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+          role="button"
+          aria-label="Hide or show expandable content"
+          onClick={() => window !== null && window.open("https://rugdoc.io/project/skullgamefi/", "_target")?.focus()}
+        />
+      </MenuEntry>
+
+      <MenuEntry key="wtf" style={{ height: 100 }}>
+        <RugDoc
+          style={{
+            backgroundImage: `url('https://assets.website-files.com/6103ca66bb1e60edce7f8f2c/610d0fe185d7d721878325ae_Dark%20Background.png')`,
+            cursor: "pointer",
+            height: "100%",
+            width: "100%",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+          role="button"
+          aria-label="Hide or show expandable content"
+          onClick={() => window !== null && window.open("https://whattofarm.io/", "_target")?.focus()}
+        />
+      </MenuEntry>
     </Container>
   );
 };
