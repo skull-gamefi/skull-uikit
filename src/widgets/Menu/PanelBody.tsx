@@ -63,7 +63,6 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           </MenuEntry>
         );
       })}
-
       <MenuEntry key="rugdoc" style={{ height: 100 }}>
         <RugDoc
           style={{
@@ -80,7 +79,6 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           onClick={() => window !== null && window.open("https://rugdoc.io/project/skullgamefi/", "_target")?.focus()}
         />
       </MenuEntry>
-
       <MenuEntry key="wtf" style={{ height: 100 }}>
         <RugDoc
           style={{
@@ -95,6 +93,24 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           role="button"
           aria-label="Hide or show expandable content"
           onClick={() => window !== null && window.open("https://whattofarm.io/", "_target")?.focus()}
+        />
+      </MenuEntry>
+      <MenuEntry key="wtf" style={{ height: 100 }}>
+        <RugDoc
+          style={{
+            backgroundImage: `url('https://www.apeoclock.com/wp-content/uploads/2021/08/Featured-on-ApeOclock-Dark.png')`,
+            cursor: "pointer",
+            height: "100%",
+            width: "100%",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+          role="button"
+          aria-label="Hide or show expandable content"
+          onClick={() =>
+            window !== null && window.open("https://www.apeoclock.com/launch/skullgamefi-presale/", "_target")?.focus()
+          }
         />
       </MenuEntry>
     </Container>

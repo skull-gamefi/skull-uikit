@@ -1893,7 +1893,7 @@ var Icon$S = function (props) {
 var Logo = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React.createElement("image", { width: "205", height: "26", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
+        React.createElement("image", { width: "205", height: "26", href: isDark ? "/images/egg/LogoTextNewDark.png" : "/images/egg/LogoTextNewWhite.png" })));
 };
 
 var Icon$T = function (props) {
@@ -2390,7 +2390,17 @@ var PanelBody = function (_a) {
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
-                }, role: "button", "aria-label": "Hide or show expandable content", onClick: function () { var _a; return window !== null && ((_a = window.open("https://whattofarm.io/", "_target")) === null || _a === void 0 ? void 0 : _a.focus()); } }))));
+                }, role: "button", "aria-label": "Hide or show expandable content", onClick: function () { var _a; return window !== null && ((_a = window.open("https://whattofarm.io/", "_target")) === null || _a === void 0 ? void 0 : _a.focus()); } })),
+        React.createElement(MenuEntry, { key: "wtf", style: { height: 100 } },
+            React.createElement(RugDoc, { style: {
+                    backgroundImage: "url('https://www.apeoclock.com/wp-content/uploads/2021/08/Featured-on-ApeOclock-Dark.png')",
+                    cursor: "pointer",
+                    height: "100%",
+                    width: "100%",
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                }, role: "button", "aria-label": "Hide or show expandable content", onClick: function () { var _a; return window !== null && ((_a = window.open("https://www.apeoclock.com/launch/skullgamefi-presale/", "_target")) === null || _a === void 0 ? void 0 : _a.focus()); } }))));
 };
 var templateObject_1$B, templateObject_2$c;
 
