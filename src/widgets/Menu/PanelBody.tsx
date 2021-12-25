@@ -113,6 +113,27 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           }
         />
       </MenuEntry>
+      <MenuEntry key="wtf" style={{ height: 100 }}>
+        <RugDoc
+          style={{
+            backgroundImage: `url('https://ftm.farmscan.io/img/farmscan-ftm-badge.c79f313d.svg')`,
+            cursor: "pointer",
+            height: "100%",
+            width: "100%",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+          role="button"
+          aria-label="Hide or show expandable content"
+          onClick={() =>
+            window !== null &&
+            window
+              .open("https://ftm.farmscan.io/address/0x7ea2669ab72b8ab7dea10c2154597494d3b335a6", "_target")
+              ?.focus()
+          }
+        />
+      </MenuEntry>
     </Container>
   );
 };

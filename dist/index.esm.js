@@ -2400,7 +2400,21 @@ var PanelBody = function (_a) {
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
-                }, role: "button", "aria-label": "Hide or show expandable content", onClick: function () { var _a; return window !== null && ((_a = window.open("https://www.apeoclock.com/launch/skullgamefi-presale/", "_target")) === null || _a === void 0 ? void 0 : _a.focus()); } }))));
+                }, role: "button", "aria-label": "Hide or show expandable content", onClick: function () { var _a; return window !== null && ((_a = window.open("https://www.apeoclock.com/launch/skullgamefi-presale/", "_target")) === null || _a === void 0 ? void 0 : _a.focus()); } })),
+        React.createElement(MenuEntry, { key: "wtf", style: { height: 100 } },
+            React.createElement(RugDoc, { style: {
+                    backgroundImage: "url('https://ftm.farmscan.io/img/farmscan-ftm-badge.c79f313d.svg')",
+                    cursor: "pointer",
+                    height: "100%",
+                    width: "100%",
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                }, role: "button", "aria-label": "Hide or show expandable content", onClick: function () {
+                    var _a;
+                    return window !== null && ((_a = window
+                        .open("https://ftm.farmscan.io/address/0x7ea2669ab72b8ab7dea10c2154597494d3b335a6", "_target")) === null || _a === void 0 ? void 0 : _a.focus());
+                } }))));
 };
 var templateObject_1$B, templateObject_2$c;
 
